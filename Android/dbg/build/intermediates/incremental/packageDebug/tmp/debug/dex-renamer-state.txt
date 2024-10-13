@@ -1,0 +1,7 @@
+#Sun Oct 13 09:31:21 CAT 2024
+base.1=C\:\\Mes Projets Mobile\\Sebene-Money\\Android\\dbg\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+path.1=classes.dex
+base.0=C\:\\Mes Projets Mobile\\Sebene-Money\\Android\\dbg\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

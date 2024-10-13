@@ -1,0 +1,124 @@
+buildscript {
+	repositories {
+		google()
+		jcenter()
+	}
+
+	dependencies {
+		classpath 'com.android.tools.build:gradle:3.5.0'
+
+	}
+}
+repositories {
+	google()
+	jcenter()
+	flatDir {
+		dirs getProject().file('libs')
+	}
+
+}
+apply plugin: 'com.android.application'
+archivesBaseName = 'Sebene-Money'
+android {
+	compileSdkVersion 29
+	buildToolsVersion '29.0.2'
+	useLibrary 'org.apache.http.legacy'
+	
+	defaultConfig {
+		applicationId "com.masociete.sebene_money.go"
+		ndk {
+			abiFilters  "arm64-v8a"
+		}
+
+		minSdkVersion 28
+	}
+
+	sourceSets {
+		main {
+			manifest.srcFile getProject().file('AndroidManifest.xml')
+			java.srcDirs = [getProject().file('src')]
+			resources.srcDirs = [getProject().file('src')]
+			res.srcDirs = [getProject().file('res')]
+			assets.srcDirs = [getProject().file('assets')]
+			aidl.srcDirs = [getProject().file('src')]
+			jniLibs.srcDirs = [getProject().file('libs')]
+		}
+	}
+	compileOptions {
+		sourceCompatibility JavaVersion.VERSION_1_7
+		targetCompatibility JavaVersion.VERSION_1_7
+    }
+	lintOptions {
+		abortOnError false
+	}
+	signingConfigs {
+		fromFile {
+			
+			storePassword ''
+			keyAlias ''
+			keyPassword ''			
+		}
+	}
+	aaptOptions {
+		noCompress 'FNC'
+	}
+	
+	dexOptions {
+		preDexLibraries = true
+		jumboMode = false
+		javaMaxHeapSize = '3072m'
+    }
+	
+	bundle {
+    language {
+        enableSplit = false
+    }
+    density {
+        enableSplit = true
+    }
+    abi {
+        enableSplit = true
+    }
+	}
+	
+	
+	buildTypes {
+		debug {
+		zipAlignEnabled true
+		minifyEnabled false
+		proguardFile file('prg.dat')
+        multiDexEnabled true
+
+		}
+		release {
+		zipAlignEnabled true
+		minifyEnabled false
+		proguardFile file('prg.dat')
+		multiDexEnabled true
+
+		}
+		applicationVariants.all { variant ->  
+			variant.outputs.each { output ->
+				output.outputFileName = new File(archivesBaseName + ".apk")
+			}
+		}
+	}
+}
+
+dependencies {
+	// Remote binary dependency
+	implementation 'com.android.support:support-v4:28.0.0'
+	implementation 'com.android.support:appcompat-v7:28.0.0'
+
+	// Local binary dependency
+	implementation fileTree(dir: getProject().file('libs'), include: ['*.jar'])
+	implementation files(getProject().file('C:\\Program Files (x86)\\PC SOFT\\WINDEV Mobile 25\\Programmes\\FrameWork\\Android\\WD250Android.aar'))
+
+}
+
+gradle.projectsEvaluated {
+	tasks.withType(JavaCompile) {
+		options.warnings = false
+	}
+}
+

@@ -1,0 +1,268 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1-2944
+INJECTED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1-2944
+INJECTED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1-2944
+INJECTED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1-2944
+MERGED from [WD250Android.aar] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\aa17e02c37c68a248610e8389c2b7de6\WD250Android\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\69ee415b12564ec70670df83c9fdfa6f\support-v4-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\bbf07aa1da9ab954374e693dfcc335b9\appcompat-v7-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\d1a6c7ee41fbe72753318d9586f1a513\support-media-compat-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\59df75d251431efe4d450d41cc6b083b\support-fragment-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\45d50504f4c11c4f549bb8efafb39de8\animated-vector-drawable-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\ee7de4c472f1da0a0213606950b8c4e7\support-core-ui-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\e6827550b79bb297911c95f109ecf5ac\support-core-utils-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\cd2aa2e9401906350c2bd9da065e1f33\support-vector-drawable-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\e8e201b21520ad3812ed914e69a9b405\loader-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\00866cffd6a67b64ccbc8d2d951560dc\viewpager-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\5d3c4801a740528a85d2e670b2dd23b7\coordinatorlayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\109e2debe5d47fa4d8f7fe1f15c611f3\drawerlayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\640954c0bd14789761b1de9b02daedae\slidingpanelayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\8c3534d87178de95eb9cb75f77214055\customview-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\49f9e7bd74012c3341e4a938529d56fe\swiperefreshlayout-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\699e03d2cbc668da0d189768d4447a8b\asynclayoutinflater-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\8bb2478d12c0baf5b421024800cd7dbb\versionedparcelable-28.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\406adf1b047a0fb17968819a70f96dd9\cursoradapter-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\2a54fb7d4a09e43fd13a659c38a9bf2a\runtime-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\d86ffcf39ba8aec22a7ebfd4c1172e3f\documentfile-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\7f3ed6ce49569e0dbf9accf24b63a15b\localbroadcastmanager-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\707c6356496c3791d321c055fe777af8\print-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\525bf97e52a2b96ba94f7509a71e8a56\interpolator-28.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\426821499609b124edd91485548e30d0\viewmodel-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\b5f1a18436322a4d6243b4d563cfece4\livedata-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\6104c576404b17797d5f42ae60105d1d\livedata-core-1.1.1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\7c5e711cb7599bc18a19cc1df98bc8d6\runtime-1.1.1\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1-2944
+INJECTED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1-2944
+INJECTED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1-2944
+	package
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:117-153
+		INJECTED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml
+		INJECTED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:154-183
+		INJECTED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml
+		INJECTED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:70-116
+	xmlns:android
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:184-207
+		INJECTED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml
+		INJECTED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml
+	android:installLocation
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:208-238
+application
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:239-2631
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\8bb2478d12c0baf5b421024800cd7dbb\versionedparcelable-28.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\8bb2478d12c0baf5b421024800cd7dbb\versionedparcelable-28.0.0\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:314-346
+	android:debuggable
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:504-529
+	android:resizeableActivity
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:434-467
+	android:largeHeap
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:408-432
+	android:icon
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:347-407
+	android:usesCleartextTraffic
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:468-503
+	android:name
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:252-313
+activity#com.masociete.sebene_money.wdgen.GWDPSebene_Money$WDLanceur
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:530-946
+	android:label
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:589-621
+	android:configChanges
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:691-793
+	android:theme
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:622-690
+	android:name
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:540-588
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:794-935
+action#android.intent.action.MAIN
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:809-860
+	android:name
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:817-858
+category#android.intent.category.LAUNCHER
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:860-919
+	android:name
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:870-917
+activity#com.masociete.sebene_money.wdgen.GWDFFEN_Main$WDActiviteFenetre
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:946-1186
+	android:hardwareAccelerated
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1149-1184
+	android:configChanges
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1009-1111
+	android:theme
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1112-1148
+	android:name
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:956-1008
+activity#com.masociete.sebene_money.wdgen.GWDFFEN_connexion$WDActiviteFenetre
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1186-1474
+	android:screenOrientation
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1394-1436
+	android:hardwareAccelerated
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1437-1472
+	android:configChanges
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1254-1356
+	android:theme
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1357-1393
+	android:name
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1196-1253
+activity#com.masociete.sebene_money.wdgen.GWDFFEN_Plus$WDActiviteFenetre
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1474-1714
+	android:hardwareAccelerated
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1677-1712
+	android:configChanges
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1537-1639
+	android:theme
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1640-1676
+	android:name
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1484-1536
+uses-library#org.apache.http.legacy
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1714-1792
+	android:required
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1766-1790
+	android:name
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1728-1765
+activity#fr.pcsoft.wdjava.ui.activite.WDActivite$BlankActivity
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1792-2001
+	tools:node
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1979-1999
+	xmlns:android
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1802-1860
+	android:theme
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1930-1978
+	android:name
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1861-1929
+activity#fr.pcsoft.wdjava.core.erreur.report.WDErrorReportActivity
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2001-2222
+	tools:node
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2200-2220
+	xmlns:android
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2011-2069
+	android:theme
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2143-2199
+	android:name
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2070-2142
+service#fr.pcsoft.wdjava.core.service.WDServiceLocal
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2222-2292
+	android:name
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2231-2290
+meta-data#fr.pcsoft.first_window_name
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2292-2377
+	android:value
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2346-2375
+	android:name
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2303-2345
+meta-data#fr.pcsoft.first_window_name_tablet
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2377-2456
+	android:value
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2438-2454
+	android:name
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2388-2437
+meta-data#fr.pcsoft.splash_orientation_phone
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2456-2536
+	android:value
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2517-2534
+	android:name
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2467-2516
+meta-data#fr.pcsoft.splash_orientation_tablet
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2536-2617
+	android:value
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2598-2615
+	android:name
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2547-2597
+uses-sdk
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2631-2699
+INJECTED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2631-2699
+MERGED from [WD250Android.aar] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\aa17e02c37c68a248610e8389c2b7de6\WD250Android\AndroidManifest.xml:7:5-9:41
+MERGED from [WD250Android.aar] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\aa17e02c37c68a248610e8389c2b7de6\WD250Android\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\69ee415b12564ec70670df83c9fdfa6f\support-v4-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\69ee415b12564ec70670df83c9fdfa6f\support-v4-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\bbf07aa1da9ab954374e693dfcc335b9\appcompat-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\bbf07aa1da9ab954374e693dfcc335b9\appcompat-v7-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\d1a6c7ee41fbe72753318d9586f1a513\support-media-compat-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\d1a6c7ee41fbe72753318d9586f1a513\support-media-compat-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\59df75d251431efe4d450d41cc6b083b\support-fragment-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\59df75d251431efe4d450d41cc6b083b\support-fragment-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\45d50504f4c11c4f549bb8efafb39de8\animated-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\45d50504f4c11c4f549bb8efafb39de8\animated-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\ee7de4c472f1da0a0213606950b8c4e7\support-core-ui-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\ee7de4c472f1da0a0213606950b8c4e7\support-core-ui-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\e6827550b79bb297911c95f109ecf5ac\support-core-utils-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\e6827550b79bb297911c95f109ecf5ac\support-core-utils-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\cd2aa2e9401906350c2bd9da065e1f33\support-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\cd2aa2e9401906350c2bd9da065e1f33\support-vector-drawable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\e8e201b21520ad3812ed914e69a9b405\loader-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\e8e201b21520ad3812ed914e69a9b405\loader-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\00866cffd6a67b64ccbc8d2d951560dc\viewpager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\00866cffd6a67b64ccbc8d2d951560dc\viewpager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\5d3c4801a740528a85d2e670b2dd23b7\coordinatorlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\5d3c4801a740528a85d2e670b2dd23b7\coordinatorlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\109e2debe5d47fa4d8f7fe1f15c611f3\drawerlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\109e2debe5d47fa4d8f7fe1f15c611f3\drawerlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\640954c0bd14789761b1de9b02daedae\slidingpanelayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\640954c0bd14789761b1de9b02daedae\slidingpanelayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\8c3534d87178de95eb9cb75f77214055\customview-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\8c3534d87178de95eb9cb75f77214055\customview-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\49f9e7bd74012c3341e4a938529d56fe\swiperefreshlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\49f9e7bd74012c3341e4a938529d56fe\swiperefreshlayout-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\699e03d2cbc668da0d189768d4447a8b\asynclayoutinflater-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\699e03d2cbc668da0d189768d4447a8b\asynclayoutinflater-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\8bb2478d12c0baf5b421024800cd7dbb\versionedparcelable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\8bb2478d12c0baf5b421024800cd7dbb\versionedparcelable-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\406adf1b047a0fb17968819a70f96dd9\cursoradapter-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\406adf1b047a0fb17968819a70f96dd9\cursoradapter-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\2a54fb7d4a09e43fd13a659c38a9bf2a\runtime-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\2a54fb7d4a09e43fd13a659c38a9bf2a\runtime-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\d86ffcf39ba8aec22a7ebfd4c1172e3f\documentfile-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\d86ffcf39ba8aec22a7ebfd4c1172e3f\documentfile-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\7f3ed6ce49569e0dbf9accf24b63a15b\localbroadcastmanager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\7f3ed6ce49569e0dbf9accf24b63a15b\localbroadcastmanager-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\707c6356496c3791d321c055fe777af8\print-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\707c6356496c3791d321c055fe777af8\print-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\525bf97e52a2b96ba94f7509a71e8a56\interpolator-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\525bf97e52a2b96ba94f7509a71e8a56\interpolator-28.0.0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\426821499609b124edd91485548e30d0\viewmodel-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\426821499609b124edd91485548e30d0\viewmodel-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\b5f1a18436322a4d6243b4d563cfece4\livedata-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\b5f1a18436322a4d6243b4d563cfece4\livedata-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\6104c576404b17797d5f42ae60105d1d\livedata-core-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\6104c576404b17797d5f42ae60105d1d\livedata-core-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\7c5e711cb7599bc18a19cc1df98bc8d6\runtime-1.1.1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\7c5e711cb7599bc18a19cc1df98bc8d6\runtime-1.1.1\AndroidManifest.xml:20:5-44
+INJECTED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2631-2699
+	android:targetSdkVersion
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2668-2697
+	android:minSdkVersion
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2641-2667
+		INJECTED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml
+		INJECTED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml
+supports-screens
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2699-2858
+	android:largeScreens
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2774-2801
+	android:smallScreens
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2717-2744
+	android:normalScreens
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2745-2773
+	android:xlargeScreens
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2802-2830
+	android:anyDensity
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2831-2856
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2858-2933
+	android:name
+		ADDED from C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2875-2931

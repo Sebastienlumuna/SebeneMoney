@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.masociete.sebene_money.go"
+    android:installLocation="auto"
+    android:targetSandboxVersion="2"
+    android:versionCode="6"
+    android:versionName="0.0.2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="28"
+        android:targetSdkVersion="28" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="fr.pcsoft.wdjava.core.application.WDAndroidApp"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@drawable/capture_d_ecran_2024_09_21_110129_2"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:resizeableActivity="true"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.masociete.sebene_money.wdgen.GWDPSebene_Money$WDLanceur"
+            android:configChanges="keyboardHidden|orientation|screenSize|keyboard|smallestScreenSize|screenLayout"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.Translucent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.masociete.sebene_money.wdgen.GWDFFEN_Main$WDActiviteFenetre"
+            android:configChanges="keyboardHidden|orientation|screenSize|keyboard|smallestScreenSize|screenLayout"
+            android:hardwareAccelerated="false"
+            android:theme="@android:style/Theme" />
+        <activity
+            android:name="com.masociete.sebene_money.wdgen.GWDFFEN_connexion$WDActiviteFenetre"
+            android:configChanges="keyboardHidden|orientation|screenSize|keyboard|smallestScreenSize|screenLayout"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme" />
+        <activity
+            android:name="com.masociete.sebene_money.wdgen.GWDFFEN_Plus$WDActiviteFenetre"
+            android:configChanges="keyboardHidden|orientation|screenSize|keyboard|smallestScreenSize|screenLayout"
+            android:hardwareAccelerated="false"
+            android:theme="@android:style/Theme" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:name="fr.pcsoft.wdjava.ui.activite.WDActivite$BlankActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:name="fr.pcsoft.wdjava.core.erreur.report.WDErrorReportActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+
+        <service android:name="fr.pcsoft.wdjava.core.service.WDServiceLocal" />
+
+        <meta-data
+            android:name="fr.pcsoft.first_window_name"
+            android:value="FEN_connexion" />
+        <meta-data
+            android:name="fr.pcsoft.first_window_name_tablet"
+            android:value="" />
+        <meta-data
+            android:name="fr.pcsoft.splash_orientation_phone"
+            android:value="1" />
+        <meta-data
+            android:name="fr.pcsoft.splash_orientation_tablet"
+            android:value="4" />
+    </application>
+
+</manifest>

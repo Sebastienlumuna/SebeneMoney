@@ -1,0 +1,2930 @@
+# NE PAS MODIFIER
+-optimizations !code/simplification/arithmetic,!code/simplification/cast,!field/*,!class/merging/*,!code/allocation/variable,!class/unboxing/enum
+-optimizationpasses 5
+-allowaccessmodification
+-dontpreverify
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontwarn android.support.**
+-ignorewarnings
+
+-keepattributes InnerClasses,*Annotation*
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+-keepclassmembers public class * extends android.view.View {
+   void set*(***);
+   *** get*();
+}
+-keep class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+-keep class * extends android.app.Service 
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}
+-keepclasseswithmembernames class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+-keepclasseswithmembernames class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+# Webview
+-keepclassmembers class fqcn.of.javascript.interface.for.webview { 
+   public *;
+}
+# Google Maps v1
+-dontwarn com.google.android.maps.**
+# Google Play Service
+-keep class * extends java.util.ListResourceBundle {
+    protected java.lang.Object[][] getContents();
+}
+-keep public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
+    public static final *** NULL;
+}
+-keepnames @com.google.android.gms.common.annotation.KeepName class *
+-keepclassmembernames class * {
+    @com.google.android.gms.common.annotation.KeepName *;
+}
+-dontwarn com.google.android.gms.common.GooglePlayServicesUtil
+# KSoap
+-dontwarn org.xmlpull.v1.**
+#BuildConfig 
+-keep class **.BuildConfig { *; }
+#QW244168
+-keep class org.xmlpull.** { *; }
+-keep class fr.pcsoft.wdjava.ui.searchbar.WDSearchHistory { *; }
+#TB93245
+-keep class fr.pcsoft.wdjava.database.hf.jni.WDHFUtilsJNI { *; }
+#TB#102876
+-keep class fr.pcsoft.wdjava.jni.WDJNIExceptionErrWL { *; }
+#TB93474
+-keep class fr.pcsoft.wdjava.net.http.WDHTTPClientRPL { *; }
+# Code généré
+-keep class **.GWD* {
+	... vWD_*;
+	... mWD_*;
+	... fWD_*(...);
+}
+#TB93368
+-keep class **.WDSplashScreenGen { *; }
+#QW293244
+-keep class fr.pcsoft.wdjava.ui.champs.zr.WDAbstractZRRenderer$AbstractRepetitionView
+{
+    boolean hasExplicitFocusable();
+}
+#SDK Facebook
+-keep class com.facebook.** { *; }
+-keepattributes Signature
+# Framework
+-dontwarn fr.pcsoft.wdjava.j.a
+#Main
+	-keep,allowshrinking class Main
+	{
+		 public static ... *(...);
+	}
+#WDActionPredefinie
+	-keep,allowshrinking class fr.pcsoft.wdjava.action.WDActionPredefinie
+	{
+		 public static ... *(...);
+	}
+#WDAPIAssert
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIAssert
+	{
+		 public static ... *(...);
+	}
+#WDAPIBitmap
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIBitmap
+	{
+		 public static ... *(...);
+	}
+#WDAPICalendrier
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPICalendrier
+	{
+		 public static ... *(...);
+	}
+#WDAPIChaine
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIChaine
+	{
+		 public static ... *(...);
+	}
+#WDAPICollection
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPICollection
+	{
+		 public static ... *(...);
+	}
+#WDAPICombinaison
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPICombinaison
+	{
+		 public static ... *(...);
+	}
+#WDAPICrc
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPICrc
+	{
+		 public static ... *(...);
+	}
+#WDAPICrypt
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPICrypt
+	{
+		 public static ... *(...);
+	}
+#WDAPIDate_Commun
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIDate_Commun
+	{
+		 public static ... *(...);
+	}
+#WDAPIDessin_Commun
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIDessin_Commun
+	{
+		 public static ... *(...);
+	}
+#WDAPIDialogue
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIDialogue
+	{
+		 public static ... *(...);
+	}
+#WDAPIDiversSTD_Commun
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIDiversSTD_Commun
+	{
+		 public static ... *(...);
+	}
+#WDAPIDivers_Commun
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIDivers_Commun
+	{
+		 public static ... *(...);
+	}
+#WDAPIEnumeration
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIEnumeration
+	{
+		 public static ... *(...);
+	}
+#WDAPIEtat
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIEtat
+	{
+		 public static ... *(...);
+	}
+#WDAPIFenetreInterne
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIFenetreInterne
+	{
+		 public static ... *(...);
+	}
+#WDAPIFenetre_Commun
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIFenetre_Commun
+	{
+		 public static ... *(...);
+	}
+#WDAPIFichier_Commun
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIFichier_Commun
+	{
+		 public static ... *(...);
+	}
+#WDAPIFinance
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIFinance
+	{
+		 public static ... *(...);
+	}
+#WDAPIFtp
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIFtp
+	{
+		 public static ... *(...);
+	}
+#WDAPIHF
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIHF
+	{
+		 public static ... *(...);
+	}
+#WDAPIHash
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIHash
+	{
+		 public static ... *(...);
+	}
+#WDAPIHttp
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIHttp
+	{
+		 public static ... *(...);
+		 public static ... *;
+	}
+#WDAPIListe_Commun
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIListe_Commun
+	{
+		 public static ... *(...);
+	}
+#WDAPIMath
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIMath
+	{
+		 public static ... *(...);
+	}
+#WDAPIMatrice
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIMatrice
+	{
+		 public static ... *(...);
+	}
+#WDAPIMem
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIMem
+	{
+		 public static ... *(...);
+	}
+#WDAPINet_Commun
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPINet_Commun
+	{
+		 public static ... *(...);
+	}
+#WDAPINum
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPINum
+	{
+		 public static ... *(...);
+	}
+#WDAPIPersist
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIPersist
+	{
+		 public static ... *(...);
+	}
+#WDAPIPrint
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIPrint
+	{
+		 public static ... *(...);
+	}
+#WDAPIReg
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIReg
+	{
+		 public static ... *(...);
+	}
+#WDAPISQLWS
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPISQLWS
+	{
+		 public static ... *(...);
+	}
+#WDAPISerialise
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPISerialise
+	{
+		 public static ... *(...);
+	}
+#WDAPISocket
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPISocket
+	{
+		 public static ... *(...);
+		 public static ... *;
+	}
+#WDAPIStat
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIStat
+	{
+		 public static ... *(...);
+	}
+#WDAPISys_Commun
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPISys_Commun
+	{
+		 public static ... *(...);
+	}
+#WDAPITable_Commun
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPITable_Commun
+	{
+		 public static ... *(...);
+	}
+#WDAPITableau
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPITableau
+	{
+		 public static ... *(...);
+	}
+#WDAPITacheParallele
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPITacheParallele
+	{
+		 public static ... *(...);
+	}
+#WDAPIThread
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIThread
+	{
+		 public static ... *(...);
+	}
+#WDAPITimer
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPITimer
+	{
+		 public static ... *(...);
+	}
+#WDAPITrace
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPITrace
+	{
+		 public static ... *(...);
+	}
+#WDAPIVM_Commun
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIVM_Commun
+	{
+		 public static ... *(...);
+	}
+#WDAPIXml
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIXml
+	{
+		 public static ... *(...);
+	}
+#WDAPIXmlClassic
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIXmlClassic
+	{
+		 public static ... *(...);
+	}
+#WDAPIXmlDINO
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIXmlDINO
+	{
+		 public static ... *(...);
+	}
+#WDAPIZip
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIZip
+	{
+		 public static ... *(...);
+	}
+#WDAPIZoneRepetee
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIZoneRepetee
+	{
+		 public static ... *(...);
+	}
+#EWDPropriete
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.EWDPropriete
+	{
+		 public static ... *;
+	}
+#IWDConstanteGen
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.IWDConstanteGen
+	{
+		 public static ... *;
+	}
+#WDCallback
+	-keep class fr.pcsoft.wdjava.core.WDCallback
+	{
+		 public ... execute(...);
+		 public ... getName(...);
+	}
+#WDIndirection
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.WDIndirection
+	{
+		 public static ... *(...);
+	}
+#WDObjet
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.WDObjet
+	{
+		 public ... *(...);
+		 public static ... *;
+	}
+#WDObjetProxyGen
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.WDObjetProxyGen
+	{
+		 public ... *(...);
+	}
+#WDTuple
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.WDTuple
+	{
+		 public ... *(...);
+	}
+#WDVarNonAllouee
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.WDVarNonAllouee
+	{
+		 public static ... *;
+	}
+#IWDAllocateur
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.allocation.IWDAllocateur
+	{
+		 public ... *(...);
+	}
+#IWDEnsembleElement
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.application.IWDEnsembleElement
+	{
+		 public ... *(...);
+	}
+#WDAbstractProjet
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.core.application.WDAbstractProjet
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDCollProc
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.application.WDCollProc
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDComposantInterne
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.application.WDComposantInterne
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDParametre
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.application.WDParametre
+	{
+		 public static ... *(...);
+	}
+#WDProcedureInterne
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.application.WDProcedureInterne
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDProcExecutor
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.core.application.executor.WDProcExecutor
+	{
+		 public ... *_GEN(...);
+	}
+#WDProcExecutorThread
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.application.executor.WDProcExecutorThread
+	{
+		 public static ... getInstance(...);
+	}
+#WDProcExecutorTimer
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.application.executor.WDProcExecutorTimer
+	{
+		 public static ... getInstance(...);
+	}
+#WDProcExecutorUIThread
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.application.executor.WDProcExecutorUIThread
+	{
+		 public static ... getInstance(...);
+	}
+#WDAppelContexte
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.context.WDAppelContexte
+	{
+		 public static ... getContexte(...);
+	}
+#WDContexte
+	-keep class fr.pcsoft.wdjava.core.context.WDContexte
+	{
+		 public static ... *(...);
+		 public ... activerGestionAutoErreurNonFatale(...);
+		 public ... declarerProcedureInterne(...);
+		 public ... getPremierParametre(...);
+		 public ... getParametreSuivant(...);
+		 public ... compact(...);
+		 protected static ... zz;
+		 public static ... CREATOR;
+	}
+#WDContexteChaine
+	-keep class fr.pcsoft.wdjava.core.context.WDContexteChaine
+	{
+		 public static ... CREATOR;
+	}
+#WDContexteHTTP
+	-keep class fr.pcsoft.wdjava.core.context.WDContexteHTTP
+	{
+		 public static ... CREATOR;
+	}
+#WDContexteMath
+	-keep class fr.pcsoft.wdjava.core.context.WDContexteMath
+	{
+		 public static ... CREATOR;
+	}
+#WDContexteVM
+	-keep class fr.pcsoft.wdjava.core.context.WDContexteVM
+	{
+		 public static ... CREATOR;
+	}
+#WDAssert
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.debug.WDAssert
+	{
+		 public static ... *(...);
+	}
+#WDDbg
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.debug.WDDbg
+	{
+		 public static ... *(...);
+	}
+#StopException
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.debug.WDDbg$StopException
+#WDErreurManager
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.erreur.WDErreurManager
+	{
+		 public static ... erreurGeneration(...);
+	}
+#WDErreurNonFatale
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.erreur.WDErreurNonFatale
+	{
+		 public ... getValeurRetour(...);
+	}
+#WDException
+	-keep class fr.pcsoft.wdjava.core.erreur.WDException
+	{
+		 public ... *(...);
+	}
+#IWDParcours
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.parcours.IWDParcours
+	{
+		 public ... *(...);
+	}
+#WDParcoursFactory
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.parcours.WDParcoursFactory
+	{
+		 public static ... *(...);
+	}
+#WDParcoursOccurrence
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.parcours.chaine.WDParcoursOccurrence
+	{
+		 public static ... *(...);
+	}
+#WDParcoursSousChaine
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.parcours.chaine.WDParcoursSousChaine
+	{
+		 public static ... *(...);
+	}
+#WDParcoursChamp
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.parcours.champ.WDParcoursChamp
+	{
+		 public static ... *(...);
+	}
+#WDParcoursChampSelection
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.parcours.champ.WDParcoursChampSelection
+	{
+		 public static ... *(...);
+	}
+#WDParcoursFichier
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.parcours.hf.WDParcoursFichier
+	{
+		 public static ... *(...);
+	}
+#WDClasse
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.poo.WDClasse
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#Membre
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.poo.WDClasse$Membre
+	{
+		 public ... *;
+	}
+#WDDinoJNI
+	-keepclassmembers class fr.pcsoft.wdjava.core.poo.WDDinoJNI
+	{
+		 public ... getIdentifiantJNI(...);
+	}
+#WDInstance
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.poo.WDInstance
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDInstanceDynamique
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.poo.WDInstanceDynamique
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDInstanceDynamiqueRF
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.poo.WDInstanceDynamiqueRF
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDInstanceFD
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.poo.WDInstanceFD
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDPropriete
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.poo.WDPropriete
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDStructure
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.poo.WDStructure
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDBooleen
+	-keep class fr.pcsoft.wdjava.core.types.WDBooleen
+	{
+		 public static ... CREATOR;
+	}
+#WDBuffer
+	-keep class fr.pcsoft.wdjava.core.types.WDBuffer
+	{
+		 public static ... CREATOR;
+	}
+#WDChaine
+	-keep class fr.pcsoft.wdjava.core.types.WDChaine
+	{
+	}
+#WDChaineA
+	-keep class fr.pcsoft.wdjava.core.types.WDChaineA
+	{
+		 public static ... CREATOR;
+	}
+#WDChaineMultilangue
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.types.WDChaineMultilangue
+	{
+		 public static ... *(...);
+	}
+#WDChaineOptionnelle
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.types.WDChaineOptionnelle
+#WDChaineU
+	-keep class fr.pcsoft.wdjava.core.types.WDChaineU
+	{
+		 public static ... CREATOR;
+	}
+#WDCombinaison
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.types.WDCombinaison
+	{
+		 public static ... declarerExclusion(...);
+		 public static ... getDefinition(...);
+	}
+#Option
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.types.WDCombinaison$Option
+	{
+	}
+#WDDate
+	-keep class fr.pcsoft.wdjava.core.types.WDDate
+	{
+		 public static ... CREATOR;
+	}
+#WDDateHeure
+	-keep class fr.pcsoft.wdjava.core.types.WDDateHeure
+	{
+		 public static ... CREATOR;
+	}
+#WDDuree
+	-keep class fr.pcsoft.wdjava.core.types.WDDuree
+	{
+		 public static ... CREATOR;
+	}
+#WDEntier1
+	-keep class fr.pcsoft.wdjava.core.types.WDEntier1
+	{
+		 public static ... CREATOR;
+	}
+#WDEntier2
+	-keep class fr.pcsoft.wdjava.core.types.WDEntier2
+	{
+		 public static ... CREATOR;
+	}
+#WDEntier4
+	-keep class fr.pcsoft.wdjava.core.types.WDEntier4
+	{
+		 public static ... CREATOR;
+	}
+#WDEntier8
+	-keep class fr.pcsoft.wdjava.core.types.WDEntier8
+	{
+		 public static ... CREATOR;
+	}
+#WDEnumeration
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.types.WDEnumeration
+#EnumValue
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.types.WDEnumeration$EnumValue
+	{
+	}
+#WDHeure
+	-keep class fr.pcsoft.wdjava.core.types.WDHeure
+	{
+		 public static ... CREATOR;
+	}
+#WDKeyValueCollection
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.types.WDKeyValueCollection
+#WDMonetaire
+	-keep class fr.pcsoft.wdjava.core.types.WDMonetaire
+	{
+		 public static ... CREATOR;
+	}
+#WDNull
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.types.WDNull
+#WDNumerique
+	-keep class fr.pcsoft.wdjava.core.types.WDNumerique
+	{
+		 public static ... CREATOR;
+	}
+#WDPoint
+	-keep class fr.pcsoft.wdjava.core.types.WDPoint
+	{
+		 public static ... CREATOR;
+	}
+#WDProcedure
+	-keep class fr.pcsoft.wdjava.core.types.WDProcedure
+	{
+		 public static ... CREATOR;
+	}
+#WDRectangle
+	-keep class fr.pcsoft.wdjava.core.types.WDRectangle
+	{
+		 public static ... CREATOR;
+	}
+#WDReel
+	-keep class fr.pcsoft.wdjava.core.types.WDReel
+	{
+		 public static ... CREATOR;
+	}
+#WDUUID
+	-keep class fr.pcsoft.wdjava.core.types.WDUUID
+	{
+		 public static ... CREATOR;
+	}
+#WDUUID256
+	-keep class fr.pcsoft.wdjava.core.types.WDUUID256
+	{
+		 public static ... CREATOR;
+	}
+#WDVariant
+	-keep class fr.pcsoft.wdjava.core.types.WDVariant
+	{
+		 public static ... CREATOR;
+	}
+#WDVoid
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.types.WDVoid
+#WDFile
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.types.collection.WDFile
+#WDListeWL
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.types.collection.WDListeWL
+#WDPile
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.types.collection.WDPile
+#WDSerie
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.types.collection.WDSerie
+#WDTableau
+	-keepclassmembers class fr.pcsoft.wdjava.core.types.collection.tableau.WDTableau
+	{
+		 public ... isInstanceLocale(...);
+	}
+#WDTableauAssociatif
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.types.collection.tableau.WDTableauAssociatif
+#WDTableauDynamique
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.types.collection.tableau.WDTableauDynamique
+#WDTableauFixe
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.types.collection.tableau.WDTableauFixe
+#WDTableauSimple
+	-keep class fr.pcsoft.wdjava.core.types.collection.tableau.WDTableauSimple
+#WDRequeteSQL
+	-keep class fr.pcsoft.wdjava.core.types.database.WDRequeteSQL
+	{
+		 public ... *(...);
+	}
+#WDSourceDonnees
+	-keep class fr.pcsoft.wdjava.core.types.database.WDSourceDonnees
+	{
+		 public ... *(...);
+		 public static ... CREATOR;
+	}
+#WDEnregistrement
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.WDEnregistrement
+	{
+		 public static ... CREATOR;
+	}
+#WDHF
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.WDHF
+	{
+		 public native ... *(...);
+		 public static ... *(...);
+	}
+#WDHF_Connexion
+	-keep class fr.pcsoft.wdjava.database.hf.WDHF_Connexion
+	{
+		 public static ... CREATOR;
+	}
+#WDHF_Contexte
+	-keep class fr.pcsoft.wdjava.database.hf.WDHF_Contexte
+	{
+		 public static ... CREATOR;
+	}
+#WDHF_Exception
+	-keep class fr.pcsoft.wdjava.database.hf.WDHF_Exception
+	{
+		 public ... *(...);
+	}
+#WDHF_Fichier
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.database.hf.WDHF_Fichier
+	{
+		 public ... getRubriqueSansCasseNiAccent(...);
+	}
+#WDHF_Manager
+	-keep class fr.pcsoft.wdjava.database.hf.WDHF_Manager
+	{
+		 public static ... onErreurHF(...);
+		 public static ... onActionClient(...);
+	}
+#EWDOptionRequete
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.EWDOptionRequete
+	{
+		 public static ... *;
+	}
+#WDDescRequeteWDR
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#Element
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$Element
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#Item
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$Item
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#Requete
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$Requete
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#Fichier
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$Fichier
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#Rubrique
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$Rubrique
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#Literal
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$Literal
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#Expression
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$Expression
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#Parametre
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$Parametre
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#Clause
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$Clause
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#Set
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$Set
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#Select
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$Select
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#From
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$From
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#Update
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$Update
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#Delete
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$Delete
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#Insert
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$Insert
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#Where
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$Where
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#Having
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$Having
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#GroupBy
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$GroupBy
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#OrderBy
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$OrderBy
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#Limit
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$Limit
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#Jointure
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDDescRequeteWDR$Jointure
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDInvalidSQLException
+	-keep,allowshrinking class fr.pcsoft.wdjava.database.hf.requete.parsing.WDInvalidSQLException
+#WDRPL
+	-keep class fr.pcsoft.wdjava.database.hf.rpl.WDRPL
+	{
+		 public native ... *(...);
+		 public static ... getVariableWL(...);
+		 public static ... initVariableRPL(...);
+		 public static ... releaseRPLContext(...);
+	}
+#VariableRPL
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.database.hf.rpl.WDRPL$VariableRPL
+	{
+		 public ... *;
+	}
+#IWDEtat
+	-keep class fr.pcsoft.wdjava.etat.IWDEtat
+	{
+		 public ... *(...);
+	}
+#WDBlocEtat
+	-keep,allowshrinking class fr.pcsoft.wdjava.etat.WDBlocEtat
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampCodeBarresEtat
+	-keep,allowshrinking class fr.pcsoft.wdjava.etat.WDChampCodeBarresEtat
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampEtat
+	-keep,allowshrinking class fr.pcsoft.wdjava.etat.WDChampEtat
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampEtatInterne
+	-keep,allowshrinking class fr.pcsoft.wdjava.etat.WDChampEtatInterne
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampImageEtat
+	-keep,allowshrinking class fr.pcsoft.wdjava.etat.WDChampImageEtat
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDEtat
+	-keep,allowshrinking class fr.pcsoft.wdjava.etat.WDEtat
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDEtatComposite
+	-keep,allowshrinking class fr.pcsoft.wdjava.etat.WDEtatComposite
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDObjetAPCodeEtat
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.etat.WDObjetAPCodeEtat
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDVariableFTP
+	-keep,allowshrinking class fr.pcsoft.wdjava.ftp.WDVariableFTP
+	{
+		 public static ... *(...);
+	}
+#IWDSablierJNI
+	-keep class fr.pcsoft.wdjava.jni.IWDSablierJNI
+	{
+		 public ... *(...);
+	}
+#WDJNIException
+	-keep class fr.pcsoft.wdjava.jni.WDJNIException
+	{
+	}
+#WDJNIExceptionErrWL
+	-keep class fr.pcsoft.wdjava.jni.WDJNIExceptionErrWL
+	{
+		 public ... setReturnValue(...);
+	}
+#WDJNIHelper
+	-keep,allowshrinking class fr.pcsoft.wdjava.jni.WDJNIHelper
+	{
+		 public static ... getFrameworkArchType(...);
+		 public native ... *(...);
+	}
+#WDJaugeJNI
+	-keep class fr.pcsoft.wdjava.jni.WDJaugeJNI
+	{
+		 public ... *(...);
+	}
+#WDCookie
+	-keep class fr.pcsoft.wdjava.net.http.WDCookie
+	{
+		 public static ... CREATOR;
+	}
+#WDHTTPAvancement
+	-keep class fr.pcsoft.wdjava.net.http.WDHTTPAvancement
+	{
+		 public static ... CREATOR;
+	}
+#WDHTTPForm
+	-keep class fr.pcsoft.wdjava.net.http.WDHTTPForm
+	{
+		 public ... *(...);
+	}
+#WDHTTPReponse
+	-keep class fr.pcsoft.wdjava.net.http.WDHTTPReponse
+	{
+		 public static ... CREATOR;
+	}
+#WDHTTPRequete
+	-keep class fr.pcsoft.wdjava.net.http.WDHTTPRequete
+	{
+		 public static ... CREATOR;
+	}
+#WDDescriptionTacheParallele
+	-keep,allowshrinking class fr.pcsoft.wdjava.task.WDDescriptionTacheParallele
+	{
+		 public static ... CREATOR;
+	}
+#WDTacheParallele
+	-keep,allowshrinking class fr.pcsoft.wdjava.task.WDTacheParallele
+	{
+		 public static ... CREATOR;
+	}
+#WDThreadWL
+	-keep,allowshrinking class fr.pcsoft.wdjava.thread.WDThreadWL
+	{
+	}
+#WDObjetAPCode
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.WDObjetAPCode
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDObjetAPCodeExtended
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.WDObjetAPCodeExtended
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDObjetAPCodeFen
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.WDObjetAPCodeFen
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDAbstractChamp
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.WDAbstractChamp
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDAbstractChampListe
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.WDAbstractChampListe
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDAttribut
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.WDAttribut
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampWL
+	-keep class fr.pcsoft.wdjava.ui.champs.WDChampWL
+	{
+		 public static ... CREATOR;
+	}
+#WDGroupe
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.WDGroupe
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#IWDFenetre
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.fenetre.IWDFenetre
+	{
+		 public ... isUniteAffichageLogique(...);
+	}
+#WDAbstractFenetre
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.fenetre.WDAbstractFenetre
+	{
+		 public ... *(...);
+		 protected ... *(...);
+		 public static ... *;
+	}
+#IWDFenetreInterne
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.fenetreinterne.IWDFenetreInterne
+	{
+		 public ... isUniteAffichageLogique(...);
+	}
+#WDAbstractChampFenetreInterne
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.fenetreinterne.WDAbstractChampFenetreInterne
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDAbstractFenetreInterne
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.fenetreinterne.WDAbstractFenetreInterne
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDAbstractChampImage
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.image.WDAbstractChampImage
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDAbstractVoletOnglet
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.onglet.WDAbstractVoletOnglet
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDAbstractSuperChamp
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.superchamp.WDAbstractSuperChamp
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDAbstractCalendrier
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.time.calendar.WDAbstractCalendrier
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDAbstractZoneRepetee
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.zr.WDAbstractZoneRepetee
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDAttributZR
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.zr.WDAttributZR
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDCouleurWL
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.dessin.WDCouleurWL
+	{
+		 public static ... CREATOR;
+	}
+#WDImageJNI
+	-keep class fr.pcsoft.wdjava.ui.dessin.WDImageJNI
+	{
+		 public ... *(...);
+	}
+#WDMsgBoxJNI
+	-keep class fr.pcsoft.wdjava.ui.dialogue.WDMsgBoxJNI
+	{
+		 public static ... *(...);
+	}
+#WDAbstractMenuPrincipal
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.menu.WDAbstractMenuPrincipal
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDAbstractOptionMenu
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.menu.WDAbstractOptionMenu
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDGraphicObjects
+	-keep class fr.pcsoft.wdjava.ui.utils.WDGraphicObjects
+	{
+	}
+#Point
+	-keep class fr.pcsoft.wdjava.ui.utils.WDGraphicObjects$Point
+	{
+		 public ... *(...);
+	}
+#PointF
+	-keep class fr.pcsoft.wdjava.ui.utils.WDGraphicObjects$PointF
+	{
+		 public ... *(...);
+	}
+#Size
+	-keep class fr.pcsoft.wdjava.ui.utils.WDGraphicObjects$Size
+	{
+		 public ... *(...);
+	}
+#SizeF
+	-keep class fr.pcsoft.wdjava.ui.utils.WDGraphicObjects$SizeF
+	{
+		 public ... *(...);
+	}
+#Rect
+	-keep class fr.pcsoft.wdjava.ui.utils.WDGraphicObjects$Rect
+	{
+		 public ... *(...);
+	}
+#RectF
+	-keep class fr.pcsoft.wdjava.ui.utils.WDGraphicObjects$RectF
+	{
+		 public ... *(...);
+	}
+#TextBlock
+	-keep class fr.pcsoft.wdjava.ui.utils.WDGraphicObjects$TextBlock
+	{
+		 public ... *(...);
+	}
+#WDWSClient
+	-keep,allowshrinking class fr.pcsoft.wdjava.ws.WDWSClient
+#WDWSEntiteXSD
+	-keep,allowshrinking class fr.pcsoft.wdjava.ws.WDWSEntiteXSD
+#WDWSManager
+	-keep,allowshrinking class fr.pcsoft.wdjava.ws.WDWSManager
+	{
+		 public static ... *(...);
+	}
+#WDXMLManager
+	-keep class fr.pcsoft.wdjava.xml.classic.WDXMLManager
+	{
+		 public static ... construireChaine(...);
+	}
+#WDXMLAttribut
+	-keep,allowshrinking class fr.pcsoft.wdjava.xml.dino.WDXMLAttribut
+	{
+		 public static ... CREATOR;
+	}
+#WDXMLDocument
+	-keep,allowshrinking class fr.pcsoft.wdjava.xml.dino.WDXMLDocument
+	{
+		 public static ... CREATOR;
+	}
+#WDXMLNamespace
+	-keep,allowshrinking class fr.pcsoft.wdjava.xml.dino.WDXMLNamespace
+	{
+		 public static ... CREATOR;
+	}
+#WDXMLNoeud
+	-keep,allowshrinking class fr.pcsoft.wdjava.xml.dino.WDXMLNoeud
+	{
+		 public static ... CREATOR;
+	}
+#WDAgenda
+	-keep,allowshrinking class fr.pcsoft.wdjava.agenda.WDAgenda
+	{
+		 public static ... CREATOR;
+	}
+#WDICalendar
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.agenda.WDICalendar
+	{
+	}
+#ICalendar
+	-keep class fr.pcsoft.wdjava.agenda.WDICalendar$ICalendar
+	{
+		 public static ... CREATOR;
+	}
+#Event
+	-keep class fr.pcsoft.wdjava.agenda.WDICalendar$Event
+	{
+		 public static ... CREATOR;
+	}
+#ProductId
+	-keep class fr.pcsoft.wdjava.agenda.WDICalendar$ProductId
+	{
+		 public static ... CREATOR;
+	}
+#Uid
+	-keep class fr.pcsoft.wdjava.agenda.WDICalendar$Uid
+	{
+		 public static ... CREATOR;
+	}
+#DateStart
+	-keep class fr.pcsoft.wdjava.agenda.WDICalendar$DateStart
+	{
+		 public static ... CREATOR;
+	}
+#DateEnd
+	-keep class fr.pcsoft.wdjava.agenda.WDICalendar$DateEnd
+	{
+		 public static ... CREATOR;
+	}
+#DateTimeStamp
+	-keep class fr.pcsoft.wdjava.agenda.WDICalendar$DateTimeStamp
+	{
+		 public static ... CREATOR;
+	}
+#Organizer
+	-keep class fr.pcsoft.wdjava.agenda.WDICalendar$Organizer
+	{
+		 public static ... CREATOR;
+	}
+#Attendee
+	-keep class fr.pcsoft.wdjava.agenda.WDICalendar$Attendee
+	{
+		 public static ... CREATOR;
+	}
+#Description
+	-keep class fr.pcsoft.wdjava.agenda.WDICalendar$Description
+	{
+		 public static ... CREATOR;
+	}
+#Summary
+	-keep class fr.pcsoft.wdjava.agenda.WDICalendar$Summary
+	{
+		 public static ... CREATOR;
+	}
+#Location
+	-keep class fr.pcsoft.wdjava.agenda.WDICalendar$Location
+	{
+		 public static ... CREATOR;
+	}
+#TimezoneId
+	-keep class fr.pcsoft.wdjava.agenda.WDICalendar$TimezoneId
+	{
+		 public static ... CREATOR;
+	}
+#Categories
+	-keep class fr.pcsoft.wdjava.agenda.WDICalendar$Categories
+	{
+		 public static ... CREATOR;
+	}
+#Priority
+	-keep class fr.pcsoft.wdjava.agenda.WDICalendar$Priority
+	{
+		 public static ... CREATOR;
+	}
+#Comment
+	-keep class fr.pcsoft.wdjava.agenda.WDICalendar$Comment
+	{
+		 public static ... CREATOR;
+	}
+#RecurrenceRule
+	-keep class fr.pcsoft.wdjava.agenda.WDICalendar$RecurrenceRule
+	{
+		 public static ... CREATOR;
+	}
+#WDAPIActionBar
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIActionBar
+	{
+		 public static ... *(...);
+	}
+#WDAPIAgenda
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIAgenda
+	{
+		 public static ... *(...);
+	}
+#WDAPIAlbum
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIAlbum
+	{
+		 public static ... *(...);
+	}
+#WDAPIAnimation
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIAnimation
+	{
+		 public static ... *(...);
+	}
+#WDAPIBackgroundTask
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIBackgroundTask
+	{
+		 public static ... *(...);
+	}
+#WDAPIBatterie
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIBatterie
+	{
+		 public static ... *(...);
+	}
+#WDAPIBeacon
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIBeacon
+	{
+		 public static ... *(...);
+	}
+#WDAPIBluetooth
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIBluetooth
+	{
+		 public static ... *(...);
+	}
+#WDAPIBluetoothLE
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIBluetoothLE
+	{
+		 public static ... *(...);
+	}
+#WDAPICamera
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPICamera
+	{
+		 public static ... *(...);
+	}
+#WDAPICapteur
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPICapteur
+	{
+		 public static ... *(...);
+	}
+#WDAPICarte
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPICarte
+	{
+		 public static ... *(...);
+	}
+#WDAPIChampAgenda
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIChampAgenda
+	{
+		 public static ... *(...);
+	}
+#WDAPICodeBarres
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPICodeBarres
+	{
+		 public static ... *(...);
+	}
+#WDAPIContact
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIContact
+	{
+		 public static ... *(...);
+	}
+#WDAPIDate
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIDate
+	{
+		 public static ... *(...);
+	}
+#WDAPIDebug
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIDebug
+	{
+		 public static ... *(...);
+	}
+#WDAPIDessin
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIDessin
+	{
+		 public static ... *(...);
+	}
+#WDAPIDisposition
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIDisposition
+	{
+		 public static ... *(...);
+	}
+#WDAPIDivers
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIDivers
+	{
+		 public static ... *(...);
+	}
+#WDAPIDiversSTD
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIDiversSTD
+	{
+		 public static ... *(...);
+	}
+#WDAPIEmail
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIEmail
+	{
+		 public static ... *(...);
+	}
+#WDAPIEncode
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIEncode
+	{
+		 public static ... *(...);
+	}
+#WDAPIExe
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIExe
+	{
+		 public static ... *(...);
+	}
+#WDAPIFacebook
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIFacebook
+	{
+		 public static ... *(...);
+	}
+#WDAPIFenetre
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIFenetre
+	{
+		 public static ... *(...);
+	}
+#WDAPIFichier
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIFichier
+	{
+		 public static ... *(...);
+	}
+#WDAPIGPS
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIGPS
+	{
+		 public static ... *(...);
+	}
+#WDAPIGPW
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIGPW
+	{
+		 public static ... *(...);
+	}
+#WDAPIGalerie
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIGalerie
+	{
+		 public static ... *(...);
+	}
+#WDAPIGeo
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIGeo
+	{
+		 public static ... *(...);
+	}
+#WDAPIGeoTracking
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIGeoTracking
+	{
+		 public static ... *(...);
+	}
+#WDAPIGglCarte
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIGglCarte
+	{
+		 public static ... *(...);
+	}
+#WDAPIGraphe
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIGraphe
+	{
+		 public static ... *(...);
+	}
+#WDAPIGroupeOption
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIGroupeOption
+	{
+		 public static ... *(...);
+	}
+#WDAPIHTML
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIHTML
+	{
+		 public static ... *(...);
+	}
+#WDAPIHardware
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIHardware
+	{
+		 public static ... *(...);
+	}
+#WDAPIICalendar
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIICalendar
+	{
+		 public static ... *(...);
+	}
+#WDAPIInApp
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIInApp
+	{
+		 public static ... *(...);
+	}
+#WDAPIJeton
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIJeton
+	{
+		 public static ... *(...);
+	}
+#WDAPIKiosk
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIKiosk
+	{
+		 public static ... *(...);
+	}
+#WDAPILecteurPDF
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPILecteurPDF
+	{
+		 public static ... *(...);
+	}
+#WDAPILed
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPILed
+	{
+		 public static ... *(...);
+	}
+#WDAPIListe
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIListe
+	{
+		 public static ... *(...);
+	}
+#WDAPIMQTT
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIMQTT
+	{
+		 public static ... *(...);
+	}
+#WDAPIMedia
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIMedia
+	{
+		 public static ... *(...);
+	}
+#WDAPIMediaPlayer
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIMediaPlayer
+	{
+		 public static ... *(...);
+	}
+#WDAPIMenu
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIMenu
+	{
+		 public static ... *(...);
+	}
+#WDAPIMultitouch
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIMultitouch
+	{
+		 public static ... *(...);
+	}
+#WDAPINFC
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPINFC
+	{
+		 public static ... *(...);
+	}
+#WDAPINet
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPINet
+	{
+		 public static ... *(...);
+	}
+#WDAPINotification
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPINotification
+	{
+		 public static ... *(...);
+	}
+#WDAPINotificationPush
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPINotificationPush
+	{
+		 public static ... *(...);
+	}
+#WDAPIOAuth
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIOAuth
+	{
+		 public static ... *(...);
+	}
+#WDAPIPlanning
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIPlanning
+	{
+		 public static ... *(...);
+	}
+#WDAPIPrint_CB
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIPrint_CB
+	{
+		 public static ... *(...);
+	}
+#WDAPIRPL
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIRPL
+	{
+		 public static ... *(...);
+	}
+#WDAPIReconnaissanceVocale
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIReconnaissanceVocale
+	{
+		 public static ... *(...);
+	}
+#WDAPIReseau
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIReseau
+	{
+		 public static ... *(...);
+	}
+#WDAPIRtf
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIRtf
+	{
+		 public static ... *(...);
+	}
+#WDAPISMS
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPISMS
+	{
+		 public static ... *(...);
+		 public static ... *;
+	}
+#WDAPISQL
+	-keep,allowobfuscation class fr.pcsoft.wdjava.api.WDAPISQL
+	{
+		 public static ... *(...);
+		 public static ... *;
+	}
+#WDAPISSH
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPISSH
+	{
+		 public static ... *(...);
+	}
+#WDAPISablierReseau
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPISablierReseau
+	{
+		 public static ... *(...);
+	}
+#WDAPISaisieAssistee
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPISaisieAssistee
+	{
+		 public static ... *(...);
+	}
+#WDAPISocketBT
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPISocketBT
+	{
+		 public static ... *(...);
+	}
+#WDAPIStorage
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIStorage
+	{
+		 public static ... *(...);
+	}
+#WDAPISyntheseVocale
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPISyntheseVocale
+	{
+		 public static ... *(...);
+	}
+#WDAPISys
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPISys
+	{
+		 public static ... *(...);
+	}
+#WDAPITable
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPITable
+	{
+		 public static ... *(...);
+	}
+#WDAPITdb
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPITdb
+	{
+		 public static ... *(...);
+	}
+#WDAPITel
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPITel
+	{
+		 public static ... *(...);
+	}
+#WDAPITelemetrie
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPITelemetrie
+	{
+		 public static ... *(...);
+	}
+#WDAPIToast
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIToast
+	{
+		 public static ... *(...);
+	}
+#WDAPIUri
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIUri
+	{
+		 public static ... *(...);
+	}
+#WDAPIVM
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIVM
+	{
+		 public static ... *(...);
+	}
+#WDAPIVariant
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIVariant
+	{
+		 public static ... *(...);
+	}
+#WDAPIVibration
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIVibration
+	{
+		 public static ... *(...);
+	}
+#WDAPIWiFi
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIWiFi
+	{
+		 public static ... *(...);
+	}
+#WDAPIWidget
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIWidget
+	{
+		 public static ... *(...);
+	}
+#WDAPIZoneMultiligne
+	-keep,allowshrinking,allowobfuscation class fr.pcsoft.wdjava.api.WDAPIZoneMultiligne
+	{
+		 public static ... *(...);
+	}
+#WDBeaconGroupe
+	-keep,allowshrinking class fr.pcsoft.wdjava.beacon.WDBeaconGroupe
+	{
+		 public static ... CREATOR;
+	}
+#WDBeaconInfoDetection
+	-keep,allowshrinking class fr.pcsoft.wdjava.beacon.WDBeaconInfoDetection
+	{
+		 public static ... CREATOR;
+	}
+#WDBeaconManager
+	-keep class fr.pcsoft.wdjava.beacon.WDBeaconManager
+#BeaconDetectionService
+	-keep,allowshrinking class fr.pcsoft.wdjava.beacon.WDBeaconManager$BeaconDetectionService
+#WDContact
+	-keep,allowshrinking class fr.pcsoft.wdjava.contact.WDContact
+#WDContactSource
+	-keep,allowshrinking class fr.pcsoft.wdjava.contact.WDContactSource
+	{
+		 public static ... CREATOR;
+	}
+#WDStructContact
+	-keep,allowshrinking class fr.pcsoft.wdjava.contact.WDStructContact
+	{
+		 public static ... *;
+	}
+#WDContactAdresseEmail
+	-keep,allowshrinking class fr.pcsoft.wdjava.contact.data.WDContactAdresseEmail
+#WDContactAdressePostale
+	-keep,allowshrinking class fr.pcsoft.wdjava.contact.data.WDContactAdressePostale
+#WDContactAdresseSIP
+	-keep,allowshrinking class fr.pcsoft.wdjava.contact.data.WDContactAdresseSIP
+#WDContactAdresseWeb
+	-keep,allowshrinking class fr.pcsoft.wdjava.contact.data.WDContactAdresseWeb
+#WDContactEmploi
+	-keep,allowshrinking class fr.pcsoft.wdjava.contact.data.WDContactEmploi
+#WDContactEvenement
+	-keep,allowshrinking class fr.pcsoft.wdjava.contact.data.WDContactEvenement
+#WDContactMessagerieInstantanee
+	-keep,allowshrinking class fr.pcsoft.wdjava.contact.data.WDContactMessagerieInstantanee
+#WDContactNote
+	-keep,allowshrinking class fr.pcsoft.wdjava.contact.data.WDContactNote
+#WDContactTelephone
+	-keep,allowshrinking class fr.pcsoft.wdjava.contact.data.WDContactTelephone
+#EWDInfoPlateforme
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.application.EWDInfoPlateforme
+	{
+		 public static ... *;
+	}
+#IWDSplashScreen
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.application.IWDSplashScreen
+	{
+		 public ... *(...);
+	}
+#WDAbstractLanceur
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.application.WDAbstractLanceur
+	{
+		 public ... *(...);
+	}
+#WDAndroidApp
+	-keep class fr.pcsoft.wdjava.core.application.WDAndroidApp
+#WDCollProcAndroid
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.application.WDCollProcAndroid
+	{
+		 public static ... *(...);
+		 protected static ... *(...);
+	}
+#WDDeviceAdminReceiver
+	-keep class fr.pcsoft.wdjava.core.application.WDDeviceAdminReceiver
+#WDProjet
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.application.WDProjet
+	{
+		 public ... *(...);
+		 protected ... *(...);
+		 static protected ... *;
+	}
+#WDProcExecutorBackgroundTask
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.application.executor.WDProcExecutorBackgroundTask
+	{
+		 public static ... getInstance(...);
+	}
+#WDErrorReportActivity
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.erreur.report.WDErrorReportActivity
+	{
+		 public ... *(...);
+	}
+#WDServiceLocal
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.service.WDServiceLocal
+#WDBackgroudTaskScheduler
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.utils.WDBackgroudTaskScheduler
+#BackgroundTaskService
+	-keep,allowshrinking class fr.pcsoft.wdjava.core.utils.WDBackgroudTaskScheduler$BackgroundTaskService
+#WDSablierJNI
+	-keep class fr.pcsoft.wdjava.database.hf.jni.WDSablierJNI
+	{
+		 public ... *(...);
+	}
+#WDEmail
+	-keep class fr.pcsoft.wdjava.email.WDEmail
+	{
+		 public static ... CREATOR;
+	}
+#WDEmailAttache
+	-keep class fr.pcsoft.wdjava.email.WDEmailAttache
+	{
+		 public static ... CREATOR;
+	}
+#WDEmailEntete
+	-keep class fr.pcsoft.wdjava.email.WDEmailEntete
+	{
+		 public static ... CREATOR;
+	}
+#WDEmailSessionIMAP
+	-keep class fr.pcsoft.wdjava.email.WDEmailSessionIMAP
+	{
+		 public static ... CREATOR;
+	}
+#WDEmailSessionPOP3
+	-keep class fr.pcsoft.wdjava.email.WDEmailSessionPOP3
+	{
+		 public static ... CREATOR;
+	}
+#WDEmailSessionSMTP
+	-keep class fr.pcsoft.wdjava.email.WDEmailSessionSMTP
+	{
+		 public static ... CREATOR;
+	}
+#WDVariableEmail
+	-keep,allowshrinking class fr.pcsoft.wdjava.email.WDVariableEmail
+	{
+		 public static ... *(...);
+	}
+#WDFBSession
+	-keep,allowshrinking class fr.pcsoft.wdjava.facebook.WDFBSession
+	{
+		 public static ... CREATOR;
+	}
+#WDFileMsgBoxFactory
+	-keep,allowshrinking class fr.pcsoft.wdjava.file.WDFileMsgBoxFactory
+#WDAdresse
+	-keep,allowshrinking class fr.pcsoft.wdjava.geo.WDAdresse
+	{
+		 public static ... CREATOR;
+	}
+#WDGeoPosition
+	-keep,allowshrinking class fr.pcsoft.wdjava.geo.WDGeoPosition
+	{
+		 public static ... CREATOR;
+	}
+#WDGeoTracking
+	-keep,allowshrinking class fr.pcsoft.wdjava.geo.WDGeoTracking
+#AlarmReceiver
+	-keep,allowshrinking class fr.pcsoft.wdjava.geo.WDGeoTracking$AlarmReceiver
+#BootReceiver
+	-keep,allowshrinking class fr.pcsoft.wdjava.geo.WDGeoTracking$BootReceiver
+#LocationService
+	-keep,allowshrinking class fr.pcsoft.wdjava.geo.WDGeoTracking$LocationService
+#LocationServicePreOreo
+	-keep,allowshrinking class fr.pcsoft.wdjava.geo.WDGeoTracking$LocationServicePreOreo
+#WDGglChemin
+	-keep,allowshrinking class fr.pcsoft.wdjava.geo.map.WDGglChemin
+	{
+		 public static ... CREATOR;
+	}
+#WDGglCoordonnee
+	-keep,allowshrinking class fr.pcsoft.wdjava.geo.map.WDGglCoordonnee
+	{
+		 public static ... CREATOR;
+	}
+#WDGglMarqueur
+	-keep,allowshrinking class fr.pcsoft.wdjava.geo.map.WDGglMarqueur
+	{
+		 public static ... CREATOR;
+	}
+#WDGglParametreCarte
+	-keep,allowshrinking class fr.pcsoft.wdjava.geo.map.WDGglParametreCarte
+	{
+		 public static ... CREATOR;
+	}
+#WDMarqueur
+	-keep,allowshrinking class fr.pcsoft.wdjava.geo.map.WDMarqueur
+	{
+		 public static ... CREATOR;
+	}
+#WDGPWOAuthParametres
+	-keep,allowshrinking class fr.pcsoft.wdjava.gpw.WDGPWOAuthParametres
+	{
+		 public static ... CREATOR;
+	}
+#WDGPWUtilisateur
+	-keep,allowshrinking class fr.pcsoft.wdjava.gpw.WDGPWUtilisateur
+	{
+		 public static ... CREATOR;
+	}
+#WDIABProduct
+	-keep,allowshrinking class fr.pcsoft.wdjava.inappbilling.WDIABProduct
+	{
+		 public static ... CREATOR;
+	}
+#WDJNIUtils
+	-keep class fr.pcsoft.wdjava.jni.WDJNIUtils
+	{
+		 public static ... *(...);
+	}
+#WDJSON
+	-keep,allowshrinking class fr.pcsoft.wdjava.json.WDJSON
+	{
+		 public static ... CREATOR;
+	}
+#WDCodeBarres
+	-keep,allowshrinking class fr.pcsoft.wdjava.media.WDCodeBarres
+	{
+		 public static ... CREATOR;
+	}
+#WDCodeBarresJNI
+	-keep class fr.pcsoft.wdjava.media.WDCodeBarresJNI
+	{
+		 public static ... CREATOR;
+	}
+#WDBTLECaracteristique
+	-keep,allowshrinking class fr.pcsoft.wdjava.net.bluetooth.WDBTLECaracteristique
+#WDBTLEDescripteur
+	-keep,allowshrinking class fr.pcsoft.wdjava.net.bluetooth.WDBTLEDescripteur
+#WDBTLEPeripherique
+	-keep,allowshrinking class fr.pcsoft.wdjava.net.bluetooth.WDBTLEPeripherique
+#WDBTLEService
+	-keep,allowshrinking class fr.pcsoft.wdjava.net.bluetooth.WDBTLEService
+#WDHTTPClientRPL
+	-keep class fr.pcsoft.wdjava.net.http.WDHTTPClientRPL
+	{
+		 public ... *(...);
+	}
+#WDVariableHTTP
+	-keep,allowshrinking class fr.pcsoft.wdjava.net.http.WDVariableHTTP
+	{
+		 public static ... *(...);
+	}
+#WDMQTTSession
+	-keep class fr.pcsoft.wdjava.net.mqtt.WDMQTTSession
+	{
+		 public static ... CREATOR;
+	}
+#WDAuthToken
+	-keep,allowshrinking class fr.pcsoft.wdjava.net.oauth2.WDAuthToken
+	{
+		 public static ... CREATOR;
+	}
+#WDOAuth2Manager
+	-keep,allowshrinking class fr.pcsoft.wdjava.net.oauth2.WDOAuth2Manager
+#OAuthActivity
+	-keep,allowshrinking class fr.pcsoft.wdjava.net.oauth2.WDOAuth2Manager$OAuthActivity
+	{
+		 public ... *(...);
+	}
+#OAuth2Parameters
+	-keep class fr.pcsoft.wdjava.net.oauth2.WDOAuth2Manager$OAuth2Parameters
+	{
+		 public static ... CREATOR;
+	}
+#OAuth2Token
+	-keep class fr.pcsoft.wdjava.net.oauth2.WDOAuth2Manager$OAuth2Token
+	{
+		 public static ... CREATOR;
+	}
+#WDOAuth2Parametres
+	-keep,allowshrinking class fr.pcsoft.wdjava.net.oauth2.WDOAuth2Parametres
+	{
+		 public static ... CREATOR;
+	}
+#WDSSHSession
+	-keep class fr.pcsoft.wdjava.net.ssh.WDSSHSession
+	{
+		 public static ... CREATOR;
+	}
+#WDNFCActivity
+	-keep,allowshrinking class fr.pcsoft.wdjava.nfc.WDNFCActivity
+	{
+		 public ... *(...);
+	}
+#WDNFCDonnee
+	-keep,allowshrinking class fr.pcsoft.wdjava.nfc.WDNFCDonnee
+	{
+		 public static ... CREATOR;
+	}
+#WDNFCManager
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.nfc.WDNFCManager
+	{
+	}
+#TagNFC
+	-keep class fr.pcsoft.wdjava.nfc.WDNFCManager$TagNFC
+	{
+		 public static ... CREATOR;
+	}
+#TagRecordInconnu
+	-keep class fr.pcsoft.wdjava.nfc.WDNFCManager$TagRecordInconnu
+	{
+		 public static ... CREATOR;
+	}
+#TagRecordVide
+	-keep class fr.pcsoft.wdjava.nfc.WDNFCManager$TagRecordVide
+	{
+		 public static ... CREATOR;
+	}
+#TagRecordUri
+	-keep class fr.pcsoft.wdjava.nfc.WDNFCManager$TagRecordUri
+	{
+		 public static ... CREATOR;
+	}
+#TagRecordText
+	-keep class fr.pcsoft.wdjava.nfc.WDNFCManager$TagRecordText
+	{
+		 public static ... CREATOR;
+	}
+#TagRecordMedia
+	-keep class fr.pcsoft.wdjava.nfc.WDNFCManager$TagRecordMedia
+	{
+		 public static ... CREATOR;
+	}
+#WDNFCTag
+	-keep,allowshrinking class fr.pcsoft.wdjava.nfc.WDNFCTag
+	{
+		 public static ... CREATOR;
+	}
+#WDNotification
+	-keep class fr.pcsoft.wdjava.notification.WDNotification
+	{
+		 public static ... CREATOR;
+	}
+#ActionsCollection
+	-keep class fr.pcsoft.wdjava.notification.WDNotification$ActionsCollection
+	{
+		 public static ... CREATOR;
+	}
+#WDNotificationAction
+	-keep class fr.pcsoft.wdjava.notification.WDNotificationAction
+	{
+		 public static ... CREATOR;
+	}
+#WDNotificationBroadcastReceiver
+	-keep,allowshrinking class fr.pcsoft.wdjava.notification.WDNotificationBroadcastReceiver
+#WDNotificationCategorie
+	-keep class fr.pcsoft.wdjava.notification.WDNotificationCategorie
+	{
+		 public static ... CREATOR;
+	}
+#WDNotificationFormat
+	-keep class fr.pcsoft.wdjava.notification.WDNotificationFormat
+	{
+		 public static ... CREATOR;
+	}
+#WDNotifPushManager
+	-keep,allowshrinking class fr.pcsoft.wdjava.notification.push.WDNotifPushManager
+#GCMBroadcastReceiver
+	-keep,allowshrinking class fr.pcsoft.wdjava.notification.push.WDNotifPushManager$GCMBroadcastReceiver
+#GCMIntentService
+	-keep,allowshrinking class fr.pcsoft.wdjava.notification.push.WDNotifPushManager$GCMIntentService
+#FirebaseRegistrationService
+	-keep,allowshrinking class fr.pcsoft.wdjava.notification.push.WDNotifPushManager$FirebaseRegistrationService
+#FirebaseNotificationService
+	-keep,allowshrinking class fr.pcsoft.wdjava.notification.push.WDNotifPushManager$FirebaseNotificationService
+#WDCloudPrintActivity
+	-keep,allowshrinking class fr.pcsoft.wdjava.print.WDCloudPrintActivity
+	{
+		 public ... *(...);
+	}
+#PrintDialogJavaScriptInterface
+	-keep,allowshrinking class fr.pcsoft.wdjava.print.WDCloudPrintActivity$PrintDialogJavaScriptInterface
+	{
+		 public ... *(...);
+	}
+#PrintDialogWebClient
+	-keep,allowshrinking class fr.pcsoft.wdjava.print.WDCloudPrintActivity$PrintDialogWebClient
+	{
+		 public ... *(...);
+	}
+#WDRappelRDV
+	-keep,allowshrinking class fr.pcsoft.wdjava.rdv.WDRappelRDV
+#WDRendezVous
+	-keep,allowshrinking class fr.pcsoft.wdjava.rdv.WDRendezVous
+#WDRepetition
+	-keep,allowshrinking class fr.pcsoft.wdjava.rdv.WDRepetition
+	{
+		 public static ... CREATOR;
+	}
+#WDTelemetrieImpl
+	-keep class fr.pcsoft.wdjava.tlm.WDTelemetrieImpl
+	{
+	}
+#WDAbstractActionBar
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.actionbar.WDAbstractActionBar
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDActionBar
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.actionbar.WDActionBar
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDNavigationBar
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.actionbar.WDNavigationBar
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDNavigationBarOption
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.actionbar.WDNavigationBarOption
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDVoletActionBar
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.actionbar.WDVoletActionBar
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDZoneActionBar
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.actionbar.WDZoneActionBar
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDActivite
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.activite.WDActivite
+	{
+		 protected ... getFenetre(...);
+	}
+#BlankActivity
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.activite.WDActivite$BlankActivity
+#WDActivityListener
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.activite.WDActivityListener
+	{
+		 public ... *(...);
+	}
+#WDCadreFactory
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.cadre.WDCadreFactory
+	{
+		 public static ... *_GEN(...);
+	}
+#WDChamp
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.WDChamp
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampAvecLibelle
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.WDChampAvecLibelle
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampListe
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.WDChampListe
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampSimple
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.WDChampSimple
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDJaugeEtPotar
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.WDJaugeEtPotar
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDListeEtCombo
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.WDListeEtCombo
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampCodeBarres
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.barcode.WDChampCodeBarres
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDBouton
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.bouton.WDBouton
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampCamera
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.camera.WDChampCamera
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDAbstractChampCarte
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.carte.WDAbstractChampCarte
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampCarteV2
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.carte.WDChampCarteV2
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampGraphe
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.chart.WDChampGraphe
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChartSeries
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.chart.model.WDChartSeries
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDCombo
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.combo.WDCombo
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDComboFichierAccesDirect
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.combo.WDComboFichierAccesDirect
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDComboFichierEnMemoire
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.combo.WDComboFichierEnMemoire
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampTDB
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.dashboard.WDChampTDB
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDFenetre
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.fenetre.WDFenetre
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampFenetreInterne
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.fenetreinterne.WDChampFenetreInterne
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampFenetreInterneExt
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.fenetreinterne.WDChampFenetreInterneExt
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampFenetreInterneFichier
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.fenetreinterne.WDChampFenetreInterneFichier
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDFenetreInterne
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.fenetreinterne.WDFenetreInterne
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDBoutonRadio
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.groupeoptions.WDBoutonRadio
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDCaseACocher
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.groupeoptions.WDCaseACocher
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDCaseACocherNatif
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.groupeoptions.WDCaseACocherNatif
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDGroupeOption
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.groupeoptions.WDGroupeOption
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDInterrupteur
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.groupeoptions.WDInterrupteur
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDInterrupteurABascule
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.groupeoptions.WDInterrupteurABascule
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDOption
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.groupeoptions.WDOption
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDSelecteur
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.groupeoptions.WDSelecteur
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampHTML
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.html.WDChampHTML
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#JSInterface
+	-keep class fr.pcsoft.wdjava.ui.champs.html.WDChampHTML$JSInterface
+	{
+		 public ... onContentHeightChanged(...);
+		 public ... Execute(...);
+	}
+#WDChampImage
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.image.WDChampImage
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDAbstractJauge
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.jauge.WDAbstractJauge
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDJauge
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.jauge.WDJauge
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDJaugeCirculaire
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.jauge.WDJaugeCirculaire
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDJaugeInfinie
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.jauge.WDJaugeInfinie
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDCellule
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.layout.WDCellule
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampDisposition
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.layout.WDChampDisposition
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDAbstractLibelle
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.libelle.WDAbstractLibelle
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDLibelle
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.libelle.WDLibelle
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDListe
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.liste.WDListe
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDListeFichierAccesDirect
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.liste.WDListeFichierAccesDirect
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDListeFichierEnMemoire
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.liste.WDListeFichierEnMemoire
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDModeleChamp
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.modelechamp.WDModeleChamp
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampMultimedia
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.multimedia.WDChampMultimedia
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampConteneurNatif
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.natif.WDChampConteneurNatif
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDOnglet
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.onglet.WDOnglet
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDVoletOnglet
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.onglet.WDVoletOnglet
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampLecteurPDF
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.pdf.WDChampLecteurPDF
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDPotentiometre
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.potentiometre.WDPotentiometre
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDPotentiometreNatif
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.potentiometre.WDPotentiometreNatif
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampPub
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.pub.WDChampPub
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampRating
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.rating.WDChampRating
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampSaisie
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.saisie.WDChampSaisie
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampSaisieMultiLigne
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.saisie.WDChampSaisieMultiLigne
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampSaisieSimple
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.saisie.WDChampSaisieSimple
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDJeton
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.saisie.taginput.WDJeton
+	{
+		 public static ... CREATOR;
+	}
+#WDSlidingMenu
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.slidingmenu.WDSlidingMenu
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDSlidingMenuLayoutUncover
+	-keep class fr.pcsoft.wdjava.ui.champs.slidingmenu.uncover.WDSlidingMenuLayoutUncover
+	{
+		 public static ... CREATOR;
+	}
+#WDSuperChamp
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.superchamp.WDSuperChamp
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDTable
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.table.WDTable
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDTableFichierAccesDirect
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.table.WDTableFichierAccesDirect
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDTableFichierEnMemoire
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.table.WDTableFichierEnMemoire
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDColonne
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.table.colonne.WDColonne
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDColonneImage
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.table.colonne.WDColonneImage
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDColonneInterrupteur
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.table.colonne.WDColonneInterrupteur
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDColonneJauge
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.table.colonne.WDColonneJauge
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDColonneLibelle
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.table.colonne.WDColonneLibelle
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDColonneRating
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.table.colonne.WDColonneRating
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDColonneTexte
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.table.colonne.WDColonneTexte
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDColonneTexteMultiLigne
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.table.colonne.WDColonneTexteMultiLigne
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDColonneTexteSimple
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.table.colonne.WDColonneTexteSimple
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDCalendrier
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.time.calendar.WDCalendrier
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#GWDFIFI_WinDevVueRDV
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.time.scheduler.GWDFIFI_WinDevVueRDV
+	{
+		 public ... *(...);
+	}
+#GWDFIFI_WinDevVueRDV_EXPRESS
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.time.scheduler.GWDFIFI_WinDevVueRDV_EXPRESS
+	{
+		 public ... *(...);
+	}
+#WDChampAgenda
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.time.scheduler.WDChampAgenda
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampPlanning
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.time.scheduler.WDChampPlanning
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampPlanningEtAgenda
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.time.scheduler.WDChampPlanningEtAgenda
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDRessourcePlanning
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.time.scheduler.WDRessourcePlanning
+	{
+		 public static ... CREATOR;
+	}
+#WDZoneMultiligne
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.zml.WDZoneMultiligne
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#LigneZML
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.zml.WDZoneMultiligne$LigneZML
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#LigneZMLStatique
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.zml.WDZoneMultiligne$LigneZMLStatique
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#LigneZMLDynamique
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.zml.WDZoneMultiligne$LigneZMLDynamique
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#GWDFIFI_AjoutElemSuppl_WM
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.zr.GWDFIFI_AjoutElemSuppl_WM
+	{
+		 public ... *(...);
+	}
+#GWDFIFI_AjoutElemSuppl_WM_EXPRESS
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.zr.GWDFIFI_AjoutElemSuppl_WM_EXPRESS
+	{
+		 public ... *(...);
+	}
+#WDAbstractZRRenderer
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.zr.WDAbstractZRRenderer
+	{
+	}
+#AbstractRepetitionView
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.zr.WDAbstractZRRenderer$AbstractRepetitionView
+	{
+		 public ... hasExplicitFocusable(...);
+	}
+#WDRuptureZR
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.zr.WDRuptureZR
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDZRBase
+	-keepclassmembers,allowshrinking class fr.pcsoft.wdjava.ui.champs.zr.WDZRBase
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDZoneRepetee
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.zr.WDZoneRepetee
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDZoneRepeteeAvecFI
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.zr.WDZoneRepeteeAvecFI
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDZoneRepeteeEx
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.zr.WDZoneRepeteeEx
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDZoneRepeteeExFichier
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.zr.WDZoneRepeteeExFichier
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDZoneRepeteeFichierAccesDirect
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.zr.WDZoneRepeteeFichierAccesDirect
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDZoneRepeteeFichierEnMemoire
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.champs.zr.WDZoneRepeteeFichierEnMemoire
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDImage
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.dessin.WDImage
+#WDImageDinoJNI
+	-keep class fr.pcsoft.wdjava.ui.dessin.WDImageDinoJNI
+	{
+		 public static ... CREATOR;
+	}
+#WDPeintreJNI
+	-keep class fr.pcsoft.wdjava.ui.dessin.peintre.WDPeintreJNI
+	{
+		 public ... *(...);
+	}
+#WDMsgBoxManagerImpl
+	-keep class fr.pcsoft.wdjava.ui.dialogue.WDMsgBoxManagerImpl
+#WDPoliceJNI
+	-keep class fr.pcsoft.wdjava.ui.font.WDPoliceJNI
+	{
+		 public ... *(...);
+	}
+#TextLayout
+	-keep class fr.pcsoft.wdjava.ui.font.WDPoliceJNI$TextLayout
+	{
+		 public ... *(...);
+	}
+#WDGesture
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.gesture.WDGesture
+	{
+		 public static ... *;
+	}
+#WDClavier
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.keyboard.WDClavier
+	{
+		 public static ... *;
+	}
+#WDMenuContextuel
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.menu.WDMenuContextuel
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDMenuPrincipal
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.menu.WDMenuPrincipal
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDOptionMenu
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.menu.WDOptionMenu
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#GWDFIFI_PULL_TO_REFRESH
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.pulltorefresh.GWDFIFI_PULL_TO_REFRESH
+	{
+		 public ... *(...);
+	}
+#GWDFIFI_PULL_TO_REFRESH_EXPRESS
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.pulltorefresh.GWDFIFI_PULL_TO_REFRESH_EXPRESS
+	{
+		 public ... *(...);
+	}
+#WDSearchActivity
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.searchbar.WDSearchActivity
+#WDSearchHistory
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.searchbar.WDSearchHistory
+#IWDDegrade
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.style.degrade.IWDDegrade
+#WDDegradeFactory
+	-keep,allowshrinking class fr.pcsoft.wdjava.ui.style.degrade.WDDegradeFactory
+	{
+		 public static ... *_GEN(...);
+	}
+#WDSablierImpl
+	-keep class fr.pcsoft.wdjava.ui.utils.WDSablierImpl
+#WDUri
+	-keep,allowshrinking class fr.pcsoft.wdjava.uri.WDUri
+	{
+		 public static ... CREATOR;
+	}
+#WDServiceLocal_Widget
+	-keep,allowshrinking class fr.pcsoft.wdjava.widget.WDServiceLocal_Widget
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDServiceWidget
+	-keep,allowshrinking class fr.pcsoft.wdjava.widget.WDServiceWidget
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDWidgetErrorActivity
+	-keep,allowshrinking class fr.pcsoft.wdjava.widget.WDWidgetErrorActivity
+#WDWidgetProvider
+	-keep,allowshrinking class fr.pcsoft.wdjava.widget.WDWidgetProvider
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#IWDChampWidget
+	-keep,allowshrinking class fr.pcsoft.wdjava.widget.ui.IWDChampWidget
+	{
+		 public ... *(...);
+	}
+#WDBoutonWidget
+	-keep,allowshrinking class fr.pcsoft.wdjava.widget.ui.WDBoutonWidget
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDChampImageWidget
+	-keep,allowshrinking class fr.pcsoft.wdjava.widget.ui.WDChampImageWidget
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDFenetreWidget
+	-keep,allowshrinking class fr.pcsoft.wdjava.widget.ui.WDFenetreWidget
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+#WDLibelleWidget
+	-keep,allowshrinking class fr.pcsoft.wdjava.widget.ui.WDLibelleWidget
+	{
+		 public ... *(...);
+		 protected ... *(...);
+	}
+
+

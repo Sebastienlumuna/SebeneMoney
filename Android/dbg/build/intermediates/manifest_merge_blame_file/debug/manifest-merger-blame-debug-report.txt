@@ -1,0 +1,158 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.masociete.sebene_money.go"
+4    android:installLocation="auto"
+5    android:versionCode="6"
+6    android:versionName="0.0.2.0" >
+7
+8    <uses-sdk
+8-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2631-2699
+9        android:minSdkVersion="28"
+9-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2641-2667
+10        android:targetSdkVersion="28" />
+10-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2668-2697
+11
+12    <supports-screens
+12-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2699-2858
+13        android:anyDensity="true"
+13-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2831-2856
+14        android:largeScreens="true"
+14-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2774-2801
+15        android:normalScreens="true"
+15-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2745-2773
+16        android:smallScreens="true"
+16-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2717-2744
+17        android:xlargeScreens="true" />
+17-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2802-2830
+18
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+19-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2858-2933
+19-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2875-2931
+20
+21    <application
+21-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:239-2631
+22        android:name="fr.pcsoft.wdjava.core.application.WDAndroidApp"
+22-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:252-313
+23        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+23-->[com.android.support:support-compat:28.0.0] C:\Users\sebas\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+24        android:debuggable="true"
+24-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:504-529
+25        android:icon="@drawable/capture_d_ecran_2024_09_21_110129_2"
+25-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:347-407
+26        android:label="@string/app_name"
+26-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:314-346
+27        android:largeHeap="true"
+27-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:408-432
+28        android:resizeableActivity="true"
+28-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:434-467
+29        android:usesCleartextTraffic="true" >
+29-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:468-503
+30        <activity
+30-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:530-946
+31            android:name="com.masociete.sebene_money.wdgen.GWDPSebene_Money$WDLanceur"
+31-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:540-588
+32            android:configChanges="keyboardHidden|orientation|screenSize|keyboard|smallestScreenSize|screenLayout"
+32-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:691-793
+33            android:label="@string/app_name"
+33-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:589-621
+34            android:theme="@style/Theme.AppCompat.Light.NoActionBar.Translucent" >
+34-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:622-690
+35            <intent-filter>
+35-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:794-935
+36                <action android:name="android.intent.action.MAIN" />
+36-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:809-860
+36-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:817-858
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:860-919
+38-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:870-917
+39            </intent-filter>
+40        </activity>
+41        <activity
+41-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:946-1186
+42            android:name="com.masociete.sebene_money.wdgen.GWDFFEN_Main$WDActiviteFenetre"
+42-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:956-1008
+43            android:configChanges="keyboardHidden|orientation|screenSize|keyboard|smallestScreenSize|screenLayout"
+43-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1009-1111
+44            android:hardwareAccelerated="false"
+44-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1149-1184
+45            android:theme="@android:style/Theme" />
+45-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1112-1148
+46        <activity
+46-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1186-1474
+47            android:name="com.masociete.sebene_money.wdgen.GWDFFEN_connexion$WDActiviteFenetre"
+47-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1196-1253
+48            android:configChanges="keyboardHidden|orientation|screenSize|keyboard|smallestScreenSize|screenLayout"
+48-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1254-1356
+49            android:hardwareAccelerated="false"
+49-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1437-1472
+50            android:screenOrientation="sensorPortrait"
+50-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1394-1436
+51            android:theme="@android:style/Theme" />
+51-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1357-1393
+52        <activity
+52-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1474-1714
+53            android:name="com.masociete.sebene_money.wdgen.GWDFFEN_Plus$WDActiviteFenetre"
+53-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1484-1536
+54            android:configChanges="keyboardHidden|orientation|screenSize|keyboard|smallestScreenSize|screenLayout"
+54-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1537-1639
+55            android:hardwareAccelerated="false"
+55-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1677-1712
+56            android:theme="@android:style/Theme" />
+56-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1640-1676
+57
+58        <uses-library
+58-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1714-1792
+59            android:name="org.apache.http.legacy"
+59-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1728-1765
+60            android:required="false" />
+60-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1766-1790
+61
+62        <activity
+62-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1792-2001
+63            xmlns:android="http://schemas.android.com/apk/res/android"
+63-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1802-1860
+64            android:name="fr.pcsoft.wdjava.ui.activite.WDActivite$BlankActivity"
+64-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1861-1929
+65            android:theme="@android:style/Theme.Translucent" />
+65-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:1930-1978
+66        <activity
+66-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2001-2222
+67            xmlns:android="http://schemas.android.com/apk/res/android"
+67-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2011-2069
+68            android:name="fr.pcsoft.wdjava.core.erreur.report.WDErrorReportActivity"
+68-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2070-2142
+69            android:theme="@android:style/Theme.DeviceDefault.Light" />
+69-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2143-2199
+70
+71        <service android:name="fr.pcsoft.wdjava.core.service.WDServiceLocal" />
+71-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2222-2292
+71-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2231-2290
+72
+73        <meta-data
+73-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2292-2377
+74            android:name="fr.pcsoft.first_window_name"
+74-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2303-2345
+75            android:value="FEN_connexion" />
+75-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2346-2375
+76        <meta-data
+76-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2377-2456
+77            android:name="fr.pcsoft.first_window_name_tablet"
+77-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2388-2437
+78            android:value="" />
+78-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2438-2454
+79        <meta-data
+79-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2456-2536
+80            android:name="fr.pcsoft.splash_orientation_phone"
+80-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2467-2516
+81            android:value="1" />
+81-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2517-2534
+82        <meta-data
+82-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2536-2617
+83            android:name="fr.pcsoft.splash_orientation_tablet"
+83-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2547-2597
+84            android:value="4" />
+84-->C:\Mes Projets Mobile\Sebene-Money\Android\dbg\AndroidManifest.xml:2:2598-2615
+85    </application>
+86
+87</manifest>
